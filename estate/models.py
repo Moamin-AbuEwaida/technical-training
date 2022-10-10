@@ -6,8 +6,8 @@ class TestModel(models.Model):
     _description = "Test Model"
 
     name = fields.Char()
-    # selling_price = fields.Integer()
-    # available_dates = fields.Date()
-    # number_of_rooms = fields.Integer()
+    selling_price = fields.Integer()
+    available_dates = fields.Date()
+    number_of_rooms = fields.Integer()
 
     
