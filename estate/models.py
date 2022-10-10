@@ -7,7 +7,7 @@ class TestModel(models.Model):
 
     name = fields.Char()
     selling_price = fields.Integer()
-    available_dates = fields.DateTimeField()
+    available_dates = fields.Date()
     number_of_rooms = fields.Integer()
-    
+
     
