@@ -60,6 +60,7 @@
             <search string="Tests">
                 <field name="state" />
             </search>
+        </field>
     </record>
     
     <!-- <menuitem id="test_model_menu_action" action="test_model_action"/> -->
