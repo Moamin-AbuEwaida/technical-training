@@ -13,6 +13,6 @@ class TestModel(models.Model):
     available_dates = fields.Date(copy=False, default=datetime.today() - relativedelta(months=3) )
     number_of_rooms = fields.Integer(default=2)
     active = fields.Boolean(default=False)
-    state = fields.Many2many('New', 'Offer Received' , 'Offer Accepted', 'Sold' , 'Canceled')
+    state = fields.One2many('New', 'Offer Received' , 'Offer Accepted', 'Sold' , 'Canceled')
 
     
