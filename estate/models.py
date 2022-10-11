@@ -12,5 +12,6 @@ class TestModel(models.Model):
     selling_price = fields.Integer(readonly=True, copy=False)
     available_dates = fields.Date(copy=False, default=datetime.today() - relativedelta(months=3) )
     number_of_rooms = fields.Integer(default=2)
+    active = fields.Boolean(default=False)
 
     
