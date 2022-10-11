@@ -47,7 +47,7 @@
         </field>
     </record>
 
-    <record model="ir.ui.view" id="test_form_custom_model">
+    <record model="ir.ui.view" id="test_search_custom_model">
         <field name="name">Test action</field>
         <field name="model">test.model</field>
         <field name="arch" type="xml">
