@@ -7,6 +7,7 @@
     </record>
     <record id="test_model_tree_view" model="ir.ui.view">
         <field name="name">Test action</field>
+        <field name="model">test.model</field>
         <field name="arch" type="xml">
             <tree string="Test">
                 <field name="name"/>
@@ -15,6 +16,32 @@
                 <field name="number_of_rooms"/>
                 <field name="state"/>
             </tree>
+        </field>
+    </record>
+
+     <record model="ir.ui.view" id="test_form_custom_model">
+        <field name="name">Test action</field>
+        <field name="model">test.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                        </group>
+                        <group>
+                            <field name="state" />
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="number_of_rooms"/>
+                                <field name="available_dates"/>
+                                <field name="selling_price"/>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet> 
+            </form>
         </field>
     </record>
     
