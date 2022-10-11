@@ -4,7 +4,7 @@
         <field name="res_model">test.model</field>
         <field name="view_mode">tree,form</field>
         <field name="Test" type="xml">
-            <tree string="Test action">
+            <tree string="Test">
                 <field name="name"/>
                 <field name="selling_price"/>
                 <field name="available_dates"/>
