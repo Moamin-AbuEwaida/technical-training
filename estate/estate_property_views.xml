@@ -53,11 +53,8 @@
         <field name="arch" type="xml">
             <search string="Tests">
                 <field name="name"/>
-            </search>
-            <search string="Tests">
+                <filter name="name" string="name" domain="[('name', '=', True)]" />
                 <field name="number_of_rooms" />
-            </search>
-            <search string="Tests">
                 <field name="state" />
             </search>
         </field>
