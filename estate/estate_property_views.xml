@@ -5,6 +5,13 @@
         <field name="view_mode">tree,form</field>
         
     </record>
+   
+    <record id="property_type_model_action" model="ir.actions.act_window">
+        <field name="name">Property type</field>
+        <field name="res_model">Property.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+   
     <record id="test_model_tree_view" model="ir.ui.view">
         <field name="name">Test action</field>
         <field name="model">test.model</field>
@@ -65,6 +72,12 @@
     <menuitem id="test_menu_root" name="Test">
         <menuitem id="test_first_level_menu" name="Test action">
             <menuitem id="test_model_menu_action_1st" action="test_model_action"/>
+        </menuitem>
+    </menuitem>
+    
+    <menuitem id="property_type_menu_root" name="Property">
+        <menuitem id="property_type_first_level_menu" name="Property">
+            <menuitem id="property_type_model_menu_action_1st" action="property_type_model_action"/>
         </menuitem>
     </menuitem>
     
