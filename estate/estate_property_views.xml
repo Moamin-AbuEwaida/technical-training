@@ -5,16 +5,17 @@
         <field name="view_mode">tree,form</field>
     </record>
     <!-- <menuitem id="test_model_menu_action" action="test_model_action"/> -->
-    <tree string="Tests">
+    
+    <menuitem id="test_menu_root" name="Test">
+        <menuitem id="test_first_level_menu" name="Test action">
+            <menuitem id="test_model_menu_action_1st" action="test_model_action"/>
+        </menuitem>
+    </menuitem>
+    <tree string="Test action">
         <field name="name"/>
         <field name="selling_price"/>
         <field name="available_dates"/>
         <field name="number_of_rooms"/>
         <field name="state"/>
     </tree>
-    <menuitem id="test_menu_root" name="Test">
-        <menuitem id="test_first_level_menu" name="Test action">
-            <menuitem id="test_model_menu_action_1st" action="test_model_action"/>
-        </menuitem>
-    </menuitem>
 </odoo>
