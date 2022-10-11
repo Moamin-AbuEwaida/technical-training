@@ -1,6 +1,15 @@
 <odoo>
     <record id="test_model_action" model="ir.actions.act_window">
-        <field name="name">Test action</field>
+        <field name="name">
+            Test action
+            <tree string="Test action">
+                <field name="name"/>
+                <field name="selling_price"/>
+                <field name="available_dates"/>
+                <field name="number_of_rooms"/>
+                <field name="state"/>
+            </tree>
+        </field>
         <field name="res_model">test.model</field>
         <field name="view_mode">tree,form</field>
     </record>
@@ -11,11 +20,5 @@
             <menuitem id="test_model_menu_action_1st" action="test_model_action"/>
         </menuitem>
     </menuitem>
-    <tree string="Test action">
-        <field name="name"/>
-        <field name="selling_price"/>
-        <field name="available_dates"/>
-        <field name="number_of_rooms"/>
-        <field name="state"/>
-    </tree>
+    
 </odoo>
