@@ -3,6 +3,7 @@
         <field name="name">Test action</field>
         <field name="res_model">test.model</field>
         <field name="view_mode">tree,form</field>
+        <field name="Test" type="xml">
             <tree string="Test action">
                 <field name="name"/>
                 <field name="selling_price"/>
@@ -10,6 +11,7 @@
                 <field name="number_of_rooms"/>
                 <field name="state"/>
             </tree>
+        </field>
     </record>
     <!-- <menuitem id="test_model_menu_action" action="test_model_action"/> -->
     
