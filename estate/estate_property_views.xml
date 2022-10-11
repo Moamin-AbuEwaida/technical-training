@@ -32,14 +32,16 @@
                         <group>
                             <field name="state" />
                         </group>
+                    </group>
                         <notebook>
                             <page string="Description">
-                                <field name="number_of_rooms"/>
-                                <field name="available_dates"/>
-                                <field name="selling_price"/>
+                                <group>
+                                    <field name="number_of_rooms" />
+                                    <field name="available_dates" />
+                                    <field name="selling_price" />
+                                </group>
                             </page>
                         </notebook>
-                    </group>
                 </sheet> 
             </form>
         </field>
