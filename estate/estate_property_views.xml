@@ -1,14 +1,13 @@
 <odoo>
     <record id="test_model_action" model="ir.actions.act_window">
-        <field name="name">Property</field>
+        <field name="name">Test action</field>
         <field name="res_model">test.model</field>
         <field name="view_mode">tree,form</field>
+        
     </record>
 
-    
-
     <record id="test_model_tree_view" model="ir.ui.view">
-        <field name="name">Property</field>
+        <field name="name">Test action</field>
         <field name="model">test.model</field>
         <field name="arch" type="xml">
             <tree string="Test">
@@ -21,14 +20,8 @@
         </field>
     </record>
 
-    <record id="type_form_custom_model" model="ir.ui.view">
-        <field name="name">Type</field>
-        <field name="model">test.model</field>
-            <field name="type"/>
-    </record>
-
     <record model="ir.ui.view" id="test_form_custom_model">
-        <field name="name">Property</field>
+        <field name="name">Test action</field>
         <field name="model">test.model</field>
         <field name="arch" type="xml">
             <form>
@@ -46,8 +39,8 @@
                                 <group>
                                     <field name="number_of_rooms" />
                                     <field name="available_dates" />
-                                    <field name="selling_price" />
-                                    <field name="active"/>
+                                    <field name="selling_price" />   
+                                    <field name="active" />   
                                 </group>
                             </page>
                         </notebook>
@@ -57,7 +50,7 @@
     </record>
 
     <record model="ir.ui.view" id="test_search_custom_model">
-        <field name="name">Property</field>
+        <field name="name">Test action</field>
         <field name="model">test.model</field>
         <field name="arch" type="xml">
             <search string="Tests">
@@ -72,16 +65,9 @@
     <!-- <menuitem id="test_model_menu_action" action="test_model_action"/> -->
     
     <menuitem id="test_menu_root" name="Test">
-        <menuitem id="test_first_level_menu" name="Property">
+        <menuitem id="test_first_level_menu" name="Test action">
             <menuitem id="test_model_menu_action_1st" action="test_model_action"/>
         </menuitem>
     </menuitem>
 
-    <menuitem id="type_menu_root" name="Type">
-        <menuitem id="type_first_level_menu" name="Type">
-            <menuitem id="type_model_menu_action_1st" action="test_model_action"/>
-        </menuitem>
-    </menuitem>
-    
 </odoo>
-
