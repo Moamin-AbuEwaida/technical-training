@@ -17,6 +17,7 @@
                 <field name="available_dates"/>
                 <field name="number_of_rooms"/>
                 <field name="state"/>
+                <field name="active"/>
             </tree>
         </field>
     </record>
@@ -41,6 +42,7 @@
                                     <field name="number_of_rooms" />
                                     <field name="available_dates" />
                                     <field name="selling_price" />
+                                    <field name="active"/>
                                 </group>
                             </page>
                         </notebook>
