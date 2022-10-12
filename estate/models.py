@@ -23,8 +23,8 @@ class TestModel(models.Model):
         ('Canceled', 'Canceled')
         ])
 
-class PropertModel(models.Model):
+class PropertyModel(models.Model):
     _name = "property.model"
-    _description = "Propert Model"
+    _description = "Property Model"
 
     name = fields.Char()
