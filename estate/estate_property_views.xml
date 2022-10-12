@@ -3,6 +3,7 @@
         <field name="name">Test action</field>
         <field name="name">Property type</field>
         <field name="res_model">test.model</field>
+        <field name="res_model">property.model</field>
         <field name="view_mode">tree,form</field>
         
     </record>
@@ -17,6 +18,16 @@
                 <field name="available_dates"/>
                 <field name="number_of_rooms"/>
                 <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="property_type_model_tree_view" model="ir.ui.view">
+        <field name="name">property type action</field>
+        <field name="model">property_type.model</field>
+        <field name="arch" type="xml">
+            <tree string="property_type">
+                <field name="name"/>
             </tree>
         </field>
     </record>

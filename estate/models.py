@@ -22,8 +22,8 @@ class TestModel(models.Model):
         ('Canceled', 'Canceled')
         ])
 
-# class PropertyModel(models.Model):
-#     _name= 'property.model'
-#     _description = 'Property Type'
+class PropertyModel(models.Model):
+    _name= 'property.model'
+    _description = 'Property Type'
 
-#     name =fields.Char()
+    name =fields.Char()
