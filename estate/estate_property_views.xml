@@ -1,15 +1,19 @@
 <odoo>
     <record id="test_model_action" model="ir.actions.act_window">
-        <field name="name">Test action</field>
-        <field name="name">Property type</field>
+        <field name="name">Property</field>
         <field name="res_model">test.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="property_model_action" model="ir.actions.act_window">
+        <field name="name">Type</field>
         <field name="res_model">property.model</field>
         <field name="view_mode">tree,form</field>
-        
+            <field name="name"/>
     </record>
 
     <record id="test_model_tree_view" model="ir.ui.view">
-        <field name="name">Test action</field>
+        <field name="name">Property</field>
         <field name="model">test.model</field>
         <field name="arch" type="xml">
             <tree string="Test">
@@ -22,18 +26,13 @@
         </field>
     </record>
 
-    <record id="property_type_model_tree_view" model="ir.ui.view">
-        <field name="name">property type action</field>
-        <field name="model">property_type.model</field>
-        <field name="arch" type="xml">
-            <tree string="property_type">
-                <field name="name"/>
-            </tree>
-        </field>
+    <record id="property_model_tree_view" model="ir.ui.view">
+
     </record>
 
+
     <record model="ir.ui.view" id="test_form_custom_model">
-        <field name="name">Test action</field>
+        <field name="name">Property</field>
         <field name="model">test.model</field>
         <field name="arch" type="xml">
             <form>
@@ -62,7 +61,7 @@
     </record>
 
     <record model="ir.ui.view" id="test_search_custom_model">
-        <field name="name">Test action</field>
+        <field name="name">Property</field>
         <field name="model">test.model</field>
         <field name="arch" type="xml">
             <search string="Tests">
@@ -81,13 +80,6 @@
             <menuitem id="test_model_menu_action_1st" action="test_model_action"/>
         </menuitem>
     </menuitem>
-
-    <menuitem id="property_type_menu_root" name="Property">
-        <menuitem id="property_type_first_level_menu" name="Property">
-            <menuitem id="property_type_model_menu_action_1st" action="property_type_model_action"/>
-        </menuitem>
-    </menuitem>
-    
     
 </odoo>
 

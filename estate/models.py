@@ -6,7 +6,8 @@ class TestModel(models.Model):
     _name = "test.model"
     _description = "Test Model"
 
-   
+
+
 
     name = fields.Char()
     selling_price = fields.Integer(string='Selling price',readonly=True, copy=False)
@@ -22,8 +23,8 @@ class TestModel(models.Model):
         ('Canceled', 'Canceled')
         ])
 
-class PropertyModel(models.Model):
-    _name= 'property.model'
-    _description = 'Property Type'
+class PropertModel(models.Model):
+    _name = "property.model"
+    _description = "Propert Model"
 
-    name =fields.Char()
+    name = fields.Char()
