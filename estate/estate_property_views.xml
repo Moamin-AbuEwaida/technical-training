@@ -1,7 +1,7 @@
 <odoo>
     <record id="test_model_action" model="ir.actions.act_window">
         <field name="name">Test action</field>
-        <!-- <field name="name">Property type</field> -->
+        <field name="name">Property type</field>
         <field name="res_model">test.model</field>
         <field name="view_mode">tree,form</field>
         
@@ -17,7 +17,6 @@
                 <field name="available_dates"/>
                 <field name="number_of_rooms"/>
                 <field name="state"/>
-                <field name="active"/>
             </tree>
         </field>
     </record>
@@ -72,11 +71,11 @@
         </menuitem>
     </menuitem>
 
-    <!-- <menuitem id="property_type_menu_root" name="Property">
+    <menuitem id="property_type_menu_root" name="Property">
         <menuitem id="property_type_first_level_menu" name="Property">
             <menuitem id="property_type_model_menu_action_1st" action="property_type_model_action"/>
         </menuitem>
-    </menuitem> -->
+    </menuitem>
     
     
 </odoo>
