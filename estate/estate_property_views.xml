@@ -20,6 +20,16 @@
         </field>
     </record>
 
+    <record id="test_model_tree_view" model="ir.ui.view">
+        <field name="name">Type</field>
+        <field name="model">test.model</field>
+        <field name="arch" type="xml">
+            <tree string="Test">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
     <record model="ir.ui.view" id="test_form_custom_model">
         <field name="name">Test action</field>
         <field name="model">test.model</field>
@@ -67,6 +77,12 @@
     <menuitem id="test_menu_root" name="Test">
         <menuitem id="test_first_level_menu" name="Test action">
             <menuitem id="test_model_menu_action_1st" action="test_model_action"/>
+        </menuitem>
+    </menuitem>
+
+    <menuitem id="type_menu_root" name="Test">
+        <menuitem id="type_first_level_menu" name="Type">
+            <menuitem id="type_model_menu_action_1st" action="test_model_action"/>
         </menuitem>
     </menuitem>
 

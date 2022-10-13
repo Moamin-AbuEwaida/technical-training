@@ -8,7 +8,6 @@ class TestModel(models.Model):
 
 
 
-
     name = fields.Char()
     selling_price = fields.Integer(string='Selling price',readonly=True, copy=False)
     available_dates = fields.Date(string='Available Dates',copy=False, default=datetime.today() - relativedelta(months=3) )
@@ -22,4 +21,6 @@ class TestModel(models.Model):
         ('Sold', 'Sold') , 
         ('Canceled', 'Canceled')
         ])
+
+
 
