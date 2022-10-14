@@ -27,7 +27,7 @@
         </field>
     </record>
 
-    <record id="test_model_tree_view" model="ir.ui.view">
+    <record id="type_model_tree_view" model="ir.ui.view">
         <field name="name">Type</field>
         <field name="model">test.model</field>
         <field name="arch" type="xml">
