@@ -18,6 +18,13 @@
                 <field name="state"/>
             </tree>
         </field>
+        <field name="name">Type</field>
+        <field name="model">test.model</field>
+        <field name="arch" type="xml">
+            <tree string="Test">
+                <field name="name"/>
+            </tree>
+        </field>
     </record>
 
     <!-- <record id="test_model_tree_view" model="ir.ui.view">
